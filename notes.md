@@ -1,6 +1,8 @@
-npx -v
-npx create-react-app (name of whatever folder you want i.e . or ./ or ../ )
-npx start (to run the live server)
+## order to install
+    - npx -v
+    - npx create-react-app (name of whatever folder you want i.e . or ./ or ../ )
+    - cd (name of whatever folder you want i.e . or ./ or ../ )
+    - npx start (to run the live server)
 
 <!-- import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -9,3 +11,7 @@ import App from './App'; -->
 
 <!-- ! don't forget!!!! -->
 className =''
+
+
+# State Notes
+ctrl & space for a short cut after filename cited
