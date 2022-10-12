@@ -1,26 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 
-function App() {
-  console.log('hello there')
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { useState } from 'react';
+
+function App(props) {
+    const [count, setCount ] = useState(0);
+    console.log('On RENDER', count);
+    // const [name, setName ] = useState('dylan');
+
+    const handleClick = (e) => {
+        // console.log('BEFORE SET', count)
+        setCount(count + 1)
+        // console.log('AFTER SET', count)
+    }
+
+
+    return (
+        <>
+            {/* <h1>{name}</h1> */}
+            <h1>{count}</h1>
+            <button onClick={handleClick}>Increment count</button>
+        </>
+    )
 }
 
-export default App;
+export default App

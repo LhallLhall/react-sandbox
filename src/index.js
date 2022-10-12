@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import newJS from './newJS';
-// import reportWebVitals from './reportWebVitals';
+import App from './App';
+import Test from './test';
+import Practice from './practice'
+import reportWebVitals from './reportWebVitals';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <newJs />
+    <App />
+    <Test />
+    <Practice />
   </React.StrictMode>
 );
 
